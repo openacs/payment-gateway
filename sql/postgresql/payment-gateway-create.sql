@@ -1,0 +1,1 @@
+\i payment-gateway-sc-create.sql

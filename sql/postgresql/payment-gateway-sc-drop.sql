@@ -1,0 +1,16 @@
+select acs_sc_operation__delete('PaymentGateway','Authorize');
+select acs_sc_msg_type__delete('PaymentGateway.Authorize.InputType');
+select acs_sc_msg_type__delete('PaymentGateway.Authorize.OutputType');
+select acs_sc_operation__delete('PaymentGateway','ChargeCard');
+select acs_sc_msg_type__delete('PaymentGateway.ChargeCard.InputType');
+select acs_sc_msg_type__delete('PaymentGateway.ChargeCard.OutputType');
+select acs_sc_operation__delete('PaymentGateway','Return');
+select acs_sc_msg_type__delete('PaymentGateway.Return.InputType');
+select acs_sc_msg_type__delete('PaymentGateway.Return.OutputType');
+select acs_sc_operation__delete('PaymentGateway','Void');
+select acs_sc_msg_type__delete('PaymentGateway.Void.InputType');
+select acs_sc_msg_type__delete('PaymentGateway.Void.OutputType');
+select acs_sc_operation__delete('PaymentGateway','Info');
+select acs_sc_msg_type__delete('PaymentGateway.Info.InputType');
+select acs_sc_msg_type__delete('PaymentGateway.Info.OutputType');
+select acs_sc_contract__delete('PaymentGateway');
