@@ -122,8 +122,3 @@ select acs_sc_operation__new (
 	   'PaymentGateway.Info.OutputType'		-- operation_outputtype
 );
 
-select acs_sc_msg_type__new (
-           'PaymentGateway.Info.InputType',
-	   ''
-);
-
