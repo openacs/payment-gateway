@@ -31,7 +31,6 @@
             <file type="data_model_create" db_type="postgresql" path="sql/postgresql/payment-gateway-create.sql"/>
             <file type="data_model_drop" db_type="postgresql" path="sql/postgresql/payment-gateway-drop.sql"/>
             <file type="data_model" db_type="postgresql" path="sql/postgresql/payment-gateway-sc-create.sql"/>
-            <file path="sql/postgresql/payment-gateway-sc-create.sql~"/>
             <file type="data_model" db_type="postgresql" path="sql/postgresql/payment-gateway-sc-drop.sql"/>
             <file type="tcl_init" path="tcl/payment-gateway-init.tcl"/>
             <file type="tcl_procs" path="tcl/payment-gateway-library-procs.tcl"/>
