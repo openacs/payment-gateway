@@ -7,7 +7,7 @@
     <initial-install-p>f</initial-install-p>
     <singleton-p>t</singleton-p>
 
-    <version name="4.6" url="http://openacs.org/repository/download/apm/payment-gateway-4.6.apm">
+    <version name="5.01" url="http://openacs.org/repository/download/apm/payment-gateway-5.01.apm">
     <database-support>
         <database>oracle</database>
         <database>postgresql</database>
@@ -17,9 +17,9 @@
         <summary>Payment Gateway Service Contract</summary>
         <release-date>2002-05-13</release-date>
         <vendor url="http://www.furfly.net">furfly.net, LLC</vendor>
-        <description format="text/html">This service contract defines an API for modules to interact with a credit card payment service providers.</description>
+        <description format="text/html">This service contract defines an API for modules to interact with a credit card payment service providers. If you are upgrading from a previous version of payment-gateway, be sure to uninstall payment-gateway and re-install it, because the payment-gateway has changed, and an upgrade script is not yet available.</description>
 
-        <provides url="payment-gateway" version="4.6"/>
+        <provides url="payment-gateway" version="5.01"/>
         <requires url="acs-service-contract" version="4.2"/>
 
         <files>

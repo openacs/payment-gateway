@@ -7,7 +7,7 @@ select acs_sc_contract__new (
 -- this is done when the order is placed, to verify that the card is good.
 select acs_sc_msg_type__new (
            'PaymentGateway.Authorize.InputType',
-	   'transaction_id:integer,amount:string,card_type:string,card_number:string,card_exp_month:string,card_exp_year:string,card_name:string,billing_street:string,billing_city:string,billing_state:string,billing_zip:string,billing_country:string'
+	   'transaction_id:integer,amount:string,card_type:string,card_number:string,card_exp_month:string,card_exp_year:string,card_code:string,card_name:string,billing_street:string,billing_city:string,billing_state:string,billing_zip:string,billing_country:string'
 );
 
 select acs_sc_msg_type__new (
@@ -36,7 +36,7 @@ select acs_sc_operation__new (
 -- should not be called directly by the end user.
 select acs_sc_msg_type__new (
            'PaymentGateway.ChargeCard.InputType',
-	   'transaction_id:integer,amount:string,card_type:string,card_number:string,card_exp_month:string,card_exp_year:string,card_name:string,billing_street:string,billing_city:string,billing_state:string,billing_zip:string,billing_country:string'
+	   'transaction_id:integer,amount:string,card_type:string,card_number:string,card_exp_month:string,card_exp_year:string,card_code:string,card_name:string,billing_street:string,billing_city:string,billing_state:string,billing_zip:string,billing_country:string'
 );
 
 select acs_sc_msg_type__new (
@@ -61,7 +61,7 @@ select acs_sc_operation__new (
 -- needed
 select acs_sc_msg_type__new (
            'PaymentGateway.Return.InputType',
-	   'transaction_id:integer,amount:string,card_type:string,card_number:string,card_exp_month:string,card_exp_year:string,card_name:string,billing_street:string,billing_city:string,billing_state:string,billing_zip:string,billing_country:string'
+	   'transaction_id:integer,amount:string,card_type:string,card_number:string,card_exp_month:string,card_exp_year:string,card_code:string,card_name:string,billing_street:string,billing_city:string,billing_state:string,billing_zip:string,billing_country:string'
 );
 select acs_sc_msg_type__new (
            'PaymentGateway.Return.OutputType',
@@ -82,7 +82,7 @@ select acs_sc_operation__new (
 -- Void is probably the least commonly supported, but it does exist.
 select acs_sc_msg_type__new (
            'PaymentGateway.Void.InputType',
-	   'transaction_id:integer,amount:string,card_type:string,card_number:string,card_exp_month:string,card_exp_year:string,card_name:string,billing_street:string,billing_city:string,billing_state:string,billing_zip:string,billing_country:string'
+	   'transaction_id:integer,amount:string,card_type:string,card_number:string,card_exp_month:string,card_exp_year:string,card_code:string,card_name:string,billing_street:string,billing_city:string,billing_state:string,billing_zip:string,billing_country:string'
 );
 
 select acs_sc_msg_type__new (
