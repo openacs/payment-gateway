@@ -17,7 +17,7 @@
         <summary>Payment Gateway Service Contract</summary>
         <release-date>2002-05-13</release-date>
         <vendor url="http://www.furfly.net">furfly.net, LLC</vendor>
-        <description format="text/html">This service contract defines an API for modules to interact with a credit card payment service providers. If you are upgrading from a previous version of payment-gateway, be sure to re-install payment-gateway (in /acs-admin/apm disable and  uninstall, then restart server,  install as a fresh package, restart server again, then go to acs-service-contracts to install bindings), because the payment-gateway service contracts have changed, and an upgrade script is not yet available.</description>
+        <description format="text/html">This service contract defines an API for modules to interact with a credit card payment service providers. If you are upgrading from a previous version (4.x) of payment-gateway, be sure to re-install payment-gateway (in /acs-admin/apm disable and  uninstall, then restart server,  install as a fresh package, restart server again, then go to acs-service-contracts to install bindings, then restart server again), because the payment-gateway service contracts have changed, and an upgrade script is not yet available.</description>
 
         <provides url="payment-gateway" version="5.01"/>
         <requires url="acs-service-contract" version="4.2"/>
